@@ -245,9 +245,9 @@ class SpectrogramDataset(Dataset, SpectrogramParser):
         return spect, transcript, magnitudeOfAudio, audio_path, transcriptToUse
 
     def parse_transcript(self, transcript_path):
-        with open(transcript_path, 'r') as transcript_file:
-            transcript = transcript_file.read().replace('\n', '')
-        transcript = list(filter(None, [self.labels_map.get(x.lower()) for x in list(transcript)]))
+        # with open(transcript_path, 'r') as transcript_file:
+        #     transcript = transcript_file.read().replace('\n', '')
+        transcript = list(filter(None, [self.labels_map.get(x.lower()) for x in list(transcript_path)]))
         return transcript
 
     def __len__(self):

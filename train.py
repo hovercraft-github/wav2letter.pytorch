@@ -48,7 +48,7 @@ parser.add_argument('--log-dir', default='visualize/w2lOnMozillaDataAftr118Epch'
 parser.add_argument('--log-params', dest='log_params', action='store_true', help='Log parameter values and gradients')
 parser.add_argument('--seed', default=1234 )
 parser.add_argument('--id', default='Wav2Letter training', help='Identifier for visdom/tensorboard run')
-parser.add_argument('--save-folder', default='~/models/wave2Letter', help='Location to save epoch models')
+parser.add_argument('--save-folder', default='~/models/wave2Letter/save', help='Location to save epoch models')
 parser.add_argument('--model-path', default='~/models/wave2Letter/wav2Letter_final.pth.tar',
                     help='Location to save best validation model')
 parser.add_argument('--continue-from', default='', help='Continue from checkpoint model')
